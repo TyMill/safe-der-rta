@@ -1,3 +1,6 @@
+
+[![DOI](https://zenodo.org/badge/1394444183.svg)](https://doi.org/10.5281/zenodo.23034031)
+
 # Safe-DER-RTA
 
 Reproducible research code and archived outputs for **Assurance-Governed Autonomous Flexibility Dispatch in Renewable-Rich Distribution Networks under Uncertainty**.
