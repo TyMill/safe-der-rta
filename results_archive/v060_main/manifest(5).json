@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-28T12:49:41.464183+00:00",
+  "python": "3.13.9 (v3.13.9:8183fa5e3f7, Oct 14 2025, 10:27:13) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "config": "configs/experiments.yaml",
+  "episodes": 700,
+  "steps": 67200
+}

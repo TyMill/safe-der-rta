@@ -1,0 +1,77 @@
+experiment:
+  name: main_campaign_v060_frozen
+  seeds:
+  - 101
+  - 202
+  - 303
+  - 404
+  - 505
+  - 606
+  - 707
+  - 808
+  - 909
+  - 1010
+  - 1111
+  - 1212
+  - 1313
+  - 1414
+  - 1515
+  - 1616
+  - 1717
+  - 1818
+  - 1919
+  - 2020
+  controllers:
+  - passive
+  - rule_based
+  - unconstrained
+  - penalty
+  - assured
+  scenarios:
+  - normal
+  - solar_surge
+  - renewable_drop
+  - demand_spike
+  - ev_coincidence
+  - compound
+  - extreme_compound
+  horizon_steps: 96
+  step_minutes: 15
+  save_step_metrics: true
+network:
+  case: ieee33
+  voltage_min_pu: 0.95
+  voltage_max_pu: 1.05
+  line_loading_max_pct: 100.0
+  thermal_rating_mode: calibrated
+  thermal_headroom_factor: 1.1
+  thermal_min_ampacity_ka: 0.02
+uncertainty:
+  forecast_error_std: 0.1
+  renewable_noise_std: 0.04
+  demand_noise_std: 0.03
+  agent_dropout_prob: 0.0
+assets:
+  pv_scale_mw: 2.4
+  wind_scale_mw: 1.4
+  battery_power_mw: 0.8
+  battery_energy_mwh: 2.4
+  battery_soc_initial: 0.55
+  battery_soc_min: 0.15
+  battery_soc_max: 0.9
+  battery_efficiency: 0.95
+  ev_power_mw: 0.55
+  ev_energy_mwh: 1.2
+  ev_soc_initial: 0.5
+  flexible_load_mw: 0.45
+objective:
+  import_cost_weight: 1.0
+  curtailment_weight: 2.0
+  battery_degradation_weight: 0.08
+  action_smoothness_weight: 0.03
+  voltage_penalty_weight: 25.0
+  thermal_penalty_weight: 25.0
+assurance:
+  repair_max_iter: 24
+  battery_reserve_soc: 0.5
+  ev_reserve_soc: 0.4

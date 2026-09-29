@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software or archived benchmark outputs, please cite the associated article and this software release."
+title: "Safe-DER-RTA: Assurance-Governed Autonomous Flexibility Dispatch Benchmark"
+type: software
+version: 1.0.0
+date-released: 2026-09-29
+authors:
+  - family-names: Miller
+    given-names: Tymoteusz
+repository-code: "https://github.com/TyMill/safe-der-rta"
+url: "https://github.com/safe-der-rta"
+license: MIT
+keywords:
+  - runtime assurance
+  - distributed energy resources
+  - AC power flow
+  - battery energy storage
+  - electric vehicles
+  - demand response
+  - renewable energy
+  - controlled autonomy
